@@ -5,25 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Websites Collection</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #121212;
+            color: #ffffff;
         }
         header {
-            background-color: #282c34;
+            background-color: #1f1f1f;
             padding: 20px;
-            color: white;
             text-align: center;
+            border-bottom: 1px solid #333;
         }
         .container {
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
-            background-color: white;
+            background-color: #1f1f1f;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #00e676;
+        }
+        h2 {
+            border-bottom: 2px solid #00e676;
+            padding-bottom: 10px;
+            font-size: 1.5em;
+            color: #00e676;
         }
         .categories {
             display: flex;
@@ -34,28 +47,29 @@
             width: 16%;
             margin-bottom: 40px;
         }
-        h2 {
-            border-bottom: 2px solid #282c34;
-            padding-bottom: 10px;
-            font-size: 1.2em;
-        }
         .website {
             display: flex;
             align-items: center;
             margin-bottom: 15px;
+            transition: transform 0.3s ease;
         }
         .website img {
             width: 50px;
             height: 50px;
             margin-right: 10px;
+            border-radius: 5px;
         }
         .website a {
             text-decoration: none;
-            color: #282c34;
-            font-size: 16px;
+            color: #ffffff;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+        .website:hover {
+            transform: translateY(-10px);
         }
         .website a:hover {
-            text-decoration: underline;
+            color: #00e676;
         }
     </style>
 </head>
@@ -68,102 +82,102 @@
             <div class="category">
                 <h2>Large Models</h2>
                 <div class="website">
-                    <img src="https://chatgpt.com/logo.png" alt="ChatGPT">
+                    <img src="https://logo.clearbit.com/chatgpt.com" alt="ChatGPT">
                     <a href="https://chatgpt.com/">ChatGPT</a>
                 </div>
                 <div class="website">
-                    <img src="https://yiyan.baidu.com/favicon.ico" alt="文心一言">
+                    <img src="https://logo.clearbit.com/yiyan.baidu.com" alt="文心一言">
                     <a href="https://yiyan.baidu.com">文心一言</a>
                 </div>
                 <div class="website">
-                    <img src="https://yuanbao.tencent.com/favicon.ico" alt="腾讯元宝">
+                    <img src="https://logo.clearbit.com/yuanbao.tencent.com" alt="腾讯元宝">
                     <a href="https://yuanbao.tencent.com/">腾讯元宝</a>
                 </div>
                 <div class="website">
-                    <img src="https://metaso.cn/favicon.ico" alt="秘塔">
+                    <img src="https://logo.clearbit.com/metaso.cn" alt="秘塔">
                     <a href="https://metaso.cn/">秘塔</a>
                 </div>
                 <div class="website">
-                    <img src="https://kimi.moonshot.cn/favicon.ico" alt="Kimi">
+                    <img src="https://logo.clearbit.com/kimi.moonshot.cn" alt="Kimi">
                     <a href="https://kimi.moonshot.cn">Kimi</a>
                 </div>
                 <div class="website">
-                    <img src="https://chatglm.cn/favicon.ico" alt="智谱清言">
+                    <img src="https://logo.clearbit.com/chatglm.cn" alt="智谱清言">
                     <a href="https://chatglm.cn/">智谱清言</a>
                 </div>
                 <div class="website">
-                    <img src="https://tongyi.aliyun.com/favicon.ico" alt="通义千问">
+                    <img src="https://logo.clearbit.com/tongyi.aliyun.com" alt="通义千问">
                     <a href="https://tongyi.aliyun.com/qianwen/">通义千问</a>
                 </div>
                 <div class="website">
-                    <img src="https://www.doubao.com/favicon.ico" alt="豆包">
+                    <img src="https://logo.clearbit.com/doubao.com" alt="豆包">
                     <a href="https://www.doubao.com/">豆包</a>
                 </div>
             </div>
             <div class="category">
                 <h2>Images</h2>
                 <div class="website">
-                    <img src="https://www.midjourney.com/favicon.ico" alt="MidJourney">
+                    <img src="https://logo.clearbit.com/midjourney.com" alt="MidJourney">
                     <a href="https://www.midjourney.com/">MidJourney</a>
                 </div>
                 <div class="website">
-                    <img src="https://aigc.360.com/favicon.ico" alt="360智绘">
+                    <img src="https://logo.clearbit.com/aigc.360.com" alt="360智绘">
                     <a href="https://aigc.360.com">360智绘</a>
                 </div>
             </div>
             <div class="category">
                 <h2>Videos</h2>
                 <div class="website">
-                    <img src="https://app.pixverse.ai/favicon.ico" alt="Pix Verse">
+                    <img src="https://logo.clearbit.com/pixverse.ai" alt="Pix Verse">
                     <a href="https://app.pixverse.ai/home">Pix Verse</a>
                 </div>
                 <div class="website">
-                    <img src="https://pika.art/favicon.ico" alt="Pika">
+                    <img src="https://logo.clearbit.com/pika.art" alt="Pika">
                     <a href="https://pika.art/">Pika</a>
                 </div>
                 <div class="website">
-                    <img src="https://lumalabs.ai/favicon.ico" alt="Luma">
+                    <img src="https://logo.clearbit.com/lumalabs.ai" alt="Luma">
                     <a href="https://lumalabs.ai/">Luma</a>
                 </div>
                 <div class="website">
-                    <img src="https://app.heygen.com/favicon.ico" alt="HeyGen">
+                    <img src="https://logo.clearbit.com/heygen.com" alt="HeyGen">
                     <a href="https://app.heygen.com/">HeyGen</a>
                 </div>
             </div>
             <div class="category">
                 <h2>Music</h2>
                 <div class="website">
-                    <img src="https://suno.com/favicon.ico" alt="Suno">
+                    <img src="https://logo.clearbit.com/suno.com" alt="Suno">
                     <a href="https://suno.com">Suno</a>
                 </div>
             </div>
             <div class="category">
                 <h2>Other</h2>
                 <div class="website">
-                    <img src="https://mathgptpro.com/favicon.ico" alt="MathGPT">
+                    <img src="https://logo.clearbit.com/mathgptpro.com" alt="MathGPT">
                     <a href="https://mathgptpro.com">MathGPT</a>
                 </div>
                 <div class="website">
-                    <img src="https://www.deepl.com/favicon.ico" alt="DeepL">
+                    <img src="https://logo.clearbit.com/deepl.com" alt="DeepL">
                     <a href="https://www.deepl.com/zh/translator">DeepL</a>
                 </div>
             </div>
             <div class="category">
                 <h2>Educational Resources</h2>
                 <div class="website">
-                    <img src="https://gpt.changjing.com.cn/favicon.ico" alt="GPT提示词大全">
+                    <img src="https://logo.clearbit.com/changjing.com.cn" alt="GPT提示词大全">
                     <a href="https://gpt.changjing.com.cn/chatgpt-prompt">GPT提示词大全</a>
                 </div>
                 <div class="website">
-                    <img src="https://srefhunter.top/favicon.ico" alt="Free Midjourney Sref Codes">
+                    <img src="https://logo.clearbit.com/srefhunter.top" alt="Free Midjourney Sref Codes">
                     <a href="https://srefhunter.top">Free Midjourney Sref Codes</a>
                 </div>
                 <div class="website">
-                    <img src="https://z3ukhtd18c.feishu.cn/favicon.ico" alt="Ai学习资料">
+                    <img src="https://logo.clearbit.com/feishu.cn" alt="Ai学习资料">
                     <a href="https://z3ukhtd18c.feishu.cn/wiki/VST2w9z9riAezbkTnXEcwsstnZd">Ai学习资料</a>
                 </div>
                 <div class="website">
-                    <img src="https://aishenqi.feishu.cn/favicon.ico" alt="Ai工具链接">
+                    <img src="https://logo.clearbit.com/feishu.cn" alt="Ai工具链接">
                     <a href="https://aishenqi.feishu.cn/docx/HMm1dZGZUoJZ3qxpGZnc43X1npg">Ai工具链接</a>
                 </div>
             </div>
