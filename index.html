@@ -25,12 +25,19 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        .categories {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .category {
+            width: 16%;
+            margin-bottom: 40px;
+        }
         h2 {
             border-bottom: 2px solid #282c34;
             padding-bottom: 10px;
-        }
-        .category {
-            margin-bottom: 40px;
+            font-size: 1.2em;
         }
         .website {
             display: flex;
@@ -38,14 +45,14 @@
             margin-bottom: 15px;
         }
         .website img {
-            width: 50px;
-            height: 50px;
-            margin-right: 15px;
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
         }
         .website a {
             text-decoration: none;
             color: #282c34;
-            font-size: 18px;
+            font-size: 16px;
         }
         .website a:hover {
             text-decoration: underline;
@@ -57,106 +64,108 @@
         <h1>AI Websites Collection</h1>
     </header>
     <div class="container">
-        <div class="category">
-            <h2>Large Models</h2>
-            <div class="website">
-                <img src="https://www.google.com/s2/favicons?domain=chatgpt.com" alt="ChatGPT">
-                <a href="https://chatgpt.com/">ChatGPT</a>
+        <div class="categories">
+            <div class="category">
+                <h2>Large Models</h2>
+                <div class="website">
+                    <img src="https://www.google.com/s2/favicons?domain=chatgpt.com" alt="ChatGPT">
+                    <a href="https://chatgpt.com/">ChatGPT</a>
+                </div>
+                <div class="website">
+                    <img src="https://www.google.com/s2/favicons?domain=yiyan.baidu.com" alt="文心一言">
+                    <a href="https://yiyan.baidu.com">文心一言</a>
+                </div>
+                <div class="website">
+                    <img src="https://www.google.com/s2/favicons?domain=yuanbao.tencent.com" alt="腾讯元宝">
+                    <a href="https://yuanbao.tencent.com/">腾讯元宝</a>
+                </div>
+                <div class="website">
+                    <img src="https://www.google.com/s2/favicons?domain=metaso.cn" alt="秘塔">
+                    <a href="https://metaso.cn/">秘塔</a>
+                </div>
+                <div class="website">
+                    <img src="https://www.google.com/s2/favicons?domain=kimi.moonshot.cn" alt="Kimi">
+                    <a href="https://kimi.moonshot.cn">Kimi</a>
+                </div>
+                <div class="website">
+                    <img src="https://www.google.com/s2/favicons?domain=chatglm.cn" alt="智谱清言">
+                    <a href="https://chatglm.cn/">智谱清言</a>
+                </div>
+                <div class="website">
+                    <img src="https://www.google.com/s2/favicons?domain=tongyi.aliyun.com" alt="通义千问">
+                    <a href="https://tongyi.aliyun.com/qianwen/">通义千问</a>
+                </div>
+                <div class="website">
+                    <img src="https://www.google.com/s2/favicons?domain=doubao.com" alt="豆包">
+                    <a href="https://www.doubao.com/">豆包</a>
+                </div>
             </div>
-            <div class="website">
-                <img src="https://www.google.com/s2/favicons?domain=yiyan.baidu.com" alt="文心一言">
-                <a href="https://yiyan.baidu.com">文心一言</a>
+            <div class="category">
+                <h2>Images</h2>
+                <div class="website">
+                    <img src="https://www.google.com/s2/favicons?domain=midjourney.com" alt="MidJourney">
+                    <a href="https://www.midjourney.com/">MidJourney</a>
+                </div>
+                <div class="website">
+                    <img src="https://www.google.com/s2/favicons?domain=aigc.360.com" alt="360智绘">
+                    <a href="https://aigc.360.com">360智绘</a>
+                </div>
             </div>
-            <div class="website">
-                <img src="https://www.google.com/s2/favicons?domain=yuanbao.tencent.com" alt="腾讯元宝">
-                <a href="https://yuanbao.tencent.com/">腾讯元宝</a>
+            <div class="category">
+                <h2>Videos</h2>
+                <div class="website">
+                    <img src="https://www.google.com/s2/favicons?domain=pixverse.ai" alt="Pix Verse">
+                    <a href="https://app.pixverse.ai/home">Pix Verse</a>
+                </div>
+                <div class="website">
+                    <img src="https://www.google.com/s2/favicons?domain=pika.art" alt="Pika">
+                    <a href="https://pika.art/">Pika</a>
+                </div>
+                <div class="website">
+                    <img src="https://www.google.com/s2/favicons?domain=lumalabs.ai" alt="Luma">
+                    <a href="https://lumalabs.ai/">Luma</a>
+                </div>
+                <div class="website">
+                    <img src="https://www.google.com/s2/favicons?domain=heygen.com" alt="HeyGen">
+                    <a href="https://app.heygen.com/">HeyGen</a>
+                </div>
             </div>
-            <div class="website">
-                <img src="https://www.google.com/s2/favicons?domain=metaso.cn" alt="秘塔">
-                <a href="https://metaso.cn/">秘塔</a>
+            <div class="category">
+                <h2>Music</h2>
+                <div class="website">
+                    <img src="https://www.google.com/s2/favicons?domain=suno.com" alt="Suno">
+                    <a href="https://suno.com">Suno</a>
+                </div>
             </div>
-            <div class="website">
-                <img src="https://www.google.com/s2/favicons?domain=kimi.moonshot.cn" alt="Kimi">
-                <a href="https://kimi.moonshot.cn">Kimi</a>
+            <div class="category">
+                <h2>Other</h2>
+                <div class="website">
+                    <img src="https://www.google.com/s2/favicons?domain=mathgptpro.com" alt="MathGPT">
+                    <a href="https://mathgptpro.com">MathGPT</a>
+                </div>
+                <div class="website">
+                    <img src="https://www.google.com/s2/favicons?domain=deepl.com" alt="DeepL">
+                    <a href="https://www.deepl.com/zh/translator">DeepL</a>
+                </div>
             </div>
-            <div class="website">
-                <img src="https://www.google.com/s2/favicons?domain=chatglm.cn" alt="智谱清言">
-                <a href="https://chatglm.cn/">智谱清言</a>
-            </div>
-            <div class="website">
-                <img src="https://www.google.com/s2/favicons?domain=tongyi.aliyun.com" alt="通义千问">
-                <a href="https://tongyi.aliyun.com/qianwen/">通义千问</a>
-            </div>
-            <div class="website">
-                <img src="https://www.google.com/s2/favicons?domain=doubao.com" alt="豆包">
-                <a href="https://www.doubao.com/">豆包</a>
-            </div>
-        </div>
-        <div class="category">
-            <h2>Images</h2>
-            <div class="website">
-                <img src="https://www.google.com/s2/favicons?domain=midjourney.com" alt="MidJourney">
-                <a href="https://www.midjourney.com/">MidJourney</a>
-            </div>
-            <div class="website">
-                <img src="https://www.google.com/s2/favicons?domain=aigc.360.com" alt="360智绘">
-                <a href="https://aigc.360.com">360智绘</a>
-            </div>
-        </div>
-        <div class="category">
-            <h2>Videos</h2>
-            <div class="website">
-                <img src="https://www.google.com/s2/favicons?domain=pixverse.ai" alt="Pix Verse">
-                <a href="https://app.pixverse.ai/home">Pix Verse</a>
-            </div>
-            <div class="website">
-                <img src="https://www.google.com/s2/favicons?domain=pika.art" alt="Pika">
-                <a href="https://pika.art/">Pika</a>
-            </div>
-            <div class="website">
-                <img src="https://www.google.com/s2/favicons?domain=lumalabs.ai" alt="Luma">
-                <a href="https://lumalabs.ai/">Luma</a>
-            </div>
-            <div class="website">
-                <img src="https://www.google.com/s2/favicons?domain=heygen.com" alt="HeyGen">
-                <a href="https://app.heygen.com/">HeyGen</a>
-            </div>
-        </div>
-        <div class="category">
-            <h2>Music</h2>
-            <div class="website">
-                <img src="https://www.google.com/s2/favicons?domain=suno.com" alt="Suno">
-                <a href="https://suno.com">Suno</a>
-            </div>
-        </div>
-        <div class="category">
-            <h2>Other</h2>
-            <div class="website">
-                <img src="https://www.google.com/s2/favicons?domain=mathgptpro.com" alt="MathGPT">
-                <a href="https://mathgptpro.com">MathGPT</a>
-            </div>
-            <div class="website">
-                <img src="https://www.google.com/s2/favicons?domain=deepl.com" alt="DeepL">
-                <a href="https://www.deepl.com/zh/translator">DeepL</a>
-            </div>
-        </div>
-        <div class="category">
-            <h2>Educational Resources</h2>
-            <div class="website">
-                <img src="https://www.google.com/s2/favicons?domain=changjing.com.cn" alt="GPT提示词大全">
-                <a href="https://gpt.changjing.com.cn/chatgpt-prompt">GPT提示词大全</a>
-            </div>
-            <div class="website">
-                <img src="https://www.google.com/s2/favicons?domain=srefhunter.top" alt="Free Midjourney Sref Codes">
-                <a href="https://srefhunter.top">Free Midjourney Sref Codes</a>
-            </div>
-            <div class="website">
-                <img src="https://www.google.com/s2/favicons?domain=feishu.cn" alt="Ai学习资料">
-                <a href="https://z3ukhtd18c.feishu.cn/wiki/VST2w9z9riAezbkTnXEcwsstnZd">Ai学习资料</a>
-            </div>
-            <div class="website">
-                <img src="https://www.google.com/s2/favicons?domain=feishu.cn" alt="Ai工具链接">
-                <a href="https://aishenqi.feishu.cn/docx/HMm1dZGZUoJZ3qxpGZnc43X1npg">Ai工具链接</a>
+            <div class="category">
+                <h2>Educational Resources</h2>
+                <div class="website">
+                    <img src="https://www.google.com/s2/favicons?domain=changjing.com.cn" alt="GPT提示词大全">
+                    <a href="https://gpt.changjing.com.cn/chatgpt-prompt">GPT提示词大全</a>
+                </div>
+                <div class="website">
+                    <img src="https://www.google.com/s2/favicons?domain=srefhunter.top" alt="Free Midjourney Sref Codes">
+                    <a href="https://srefhunter.top">Free Midjourney Sref Codes</a>
+                </div>
+                <div class="website">
+                    <img src="https://www.google.com/s2/favicons?domain=feishu.cn" alt="Ai学习资料">
+                    <a href="https://z3ukhtd18c.feishu.cn/wiki/VST2w9z9riAezbkTnXEcwsstnZd">Ai学习资料</a>
+                </div>
+                <div class="website">
+                    <img src="https://www.google.com/s2/favicons?domain=feishu.cn" alt="Ai工具链接">
+                    <a href="https://aishenqi.feishu.cn/docx/HMm1dZGZUoJZ3qxpGZnc43X1npg">Ai工具链接</a>
+                </div>
             </div>
         </div>
     </div>
