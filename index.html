@@ -49,14 +49,20 @@
         }
         .website {
             display: flex;
+            flex-direction: column;
             align-items: center;
             margin-bottom: 15px;
+            padding: 10px;
+            background-color: #2a2a2a;
+            border-radius: 10px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            cursor: pointer;
         }
         .website img {
             width: 50px;
             height: 50px;
-            margin-right: 10px;
+            margin-bottom: 10px;
             border-radius: 5px;
         }
         .website a {
@@ -64,6 +70,11 @@
             color: #ffffff;
             font-size: 1em;
             transition: color 0.3s ease;
+        }
+        .website p {
+            margin: 5px 0 0;
+            font-size: 0.875em;
+            color: #aaaaaa;
         }
         .website:hover {
             transform: translateY(-10px);
@@ -83,6 +94,12 @@
             }
         }
     </style>
+    <script>
+        function openInNewTab(url) {
+            var win = window.open(url, '_blank');
+            win.focus();
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -92,108 +109,128 @@
         <div class="categories">
             <div class="category">
                 <h2>Large Models</h2>
-                <div class="website">
+                <div class="website" onclick="openInNewTab('https://chatgpt.com/')">
                     <img src="https://chatgpt.com/logo.png" alt="ChatGPT" onerror="this.onerror=null;this.src='https://logo.clearbit.com/chatgpt.com';this.onerror='this.onerror=null;this.src=https://www.google.com/s2/favicons?domain=chatgpt.com';this.onerror='this.onerror=null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror=null;this.src=https://favi.deno.dev/logo/chatgpt.com';">
-                    <a href="https://chatgpt.com/">ChatGPT</a>
+                    <a href="https://chatgpt.com/" target="_blank">ChatGPT</a>
+                    <p>OpenAI's advanced conversational AI model.</p>
                 </div>
-                <div class="website">
+                <div class="website" onclick="openInNewTab('https://yiyan.baidu.com')">
                     <img src="https://yiyan.baidu.com/favicon.ico" alt="文心一言" onerror="this.onerror=null;this.src='https://logo.clearbit.com/yiyan.baidu.com';this.onerror='this.onerror=null;this.src=https://www.google.com/s2/favicons?domain=yiyan.baidu.com';this.onerror='this.onerror=null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror=null;this.src=https://favi.deno.dev/logo/yiyan.baidu.com';">
-                    <a href="https://yiyan.baidu.com">文心一言</a>
+                    <a href="https://yiyan.baidu.com" target="_blank">文心一言</a>
+                    <p>Baidu's powerful AI language model.</p>
                 </div>
-                <div class="website">
+                <div class="website" onclick="openInNewTab('https://yuanbao.tencent.com/')">
                     <img src="https://yuanbao.tencent.com/favicon.ico" alt="腾讯元宝" onerror="this.onerror=null;this.src='https://logo.clearbit.com/yuanbao.tencent.com';this.onerror='this.onerror=null;this.src=https://www.google.com/s2/favicons?domain=yuanbao.tencent.com';this.onerror='this.onerror=null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror=null;this.src=https://favi.deno.dev/logo/yuanbao.tencent.com';">
-                    <a href="https://yuanbao.tencent.com/">腾讯元宝</a>
+                    <a href="https://yuanbao.tencent.com/" target="_blank">腾讯元宝</a>
+                    <p>Tencent's AI model for various applications.</p>
                 </div>
-                <div class="website">
+                <div class="website" onclick="openInNewTab('https://metaso.cn/')">
                     <img src="https://metaso.cn/favicon.ico" alt="秘塔" onerror="this.onerror=null;this.src='https://logo.clearbit.com/metaso.cn';this.onerror='this.onerror=null;this.src=https://www.google.com/s2/favicons?domain=metaso.cn';this.onerror='this.onerror=null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror=null;this.src=https://favi.deno.dev/logo/metaso.cn';">
-                    <a href="https://metaso.cn/">秘塔</a>
+                    <a href="https://metaso.cn/" target="_blank">秘塔</a>
+                    <p>AI platform for Chinese language processing.</p>
                 </div>
-                <div class="website">
+                <div class="website" onclick="openInNewTab('https://kimi.moonshot.cn')">
                     <img src="https://kimi.moonshot.cn/favicon.ico" alt="Kimi" onerror="this.onerror=null;this.src='https://logo.clearbit.com/kimi.moonshot.cn';this.onerror='this.onerror=null;this.src=https://www.google.com/s2/favicons?domain=kimi.moonshot.cn';this.onerror='this.onerror=null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror=null;this.src=https://favi.deno.dev/logo/kimi.moonshot.cn';">
-                    <a href="https://kimi.moonshot.cn">Kimi</a>
+                    <a href="https://kimi.moonshot.cn" target="_blank">Kimi</a>
+                    <p>Moonshot's conversational AI service.</p>
                 </div>
-                <div class="website">
+                <div class="website" onclick="openInNewTab('https://chatglm.cn/')">
                     <img src="https://chatglm.cn/favicon.ico" alt="智谱清言" onerror="this.onerror=null;this.src='https://logo.clearbit.com/chatglm.cn';this.onerror='this.onerror=null;this.src=https://www.google.com/s2/favicons?domain=chatglm.cn';this.onerror='this.onerror=null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror=null;this.src=https://favi.deno.dev/logo/chatglm.cn';">
-                    <a href="https://chatglm.cn/">智谱清言</a>
+                    <a href="https://chatglm.cn/" target="_blank">智谱清言</a>
+                    <p>AI-based language model by Zhipu.</p>
                 </div>
-                <div class="website">
-                    <img src="https://tongyi.aliyun.com/favicon.ico" alt="通义千问" onerror="this.onerror=null;this.src='https://logo.clearbit.com/tongyi.aliyun.com';this.onerror='this.onerror=null;this.src=https://www.google.com/s2/favicons?domain=tongyi.aliyun.com';this.onerror='this.onerror=null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror=null;this.src=https://favi.deno.dev/logo/tongyi.aliyun.com';">
-                    <a href="https://tongyi.aliyun.com/qianwen/">通义千问</a>
+                <div class="website" onclick="openInNewTab('https://tongyi.aliyun.com/qianwen/')">
+                    <img src="https://tongyi.aliyun.com/favicon.ico" alt="通义千问" onerror="this.onerror=null;this.src='https://logo.clearbit.com/tongyi.aliyun.com';this.onerror='this.onerror=null;this.src=https://www.google.com/s2/favicons?domain=tongyi.aliyun.com';this.onerror='this.onerror=null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror.null;this.src=https://favi.deno.dev/logo/tongyi.aliyun.com';">
+                    <a href="https://tongyi.aliyun.com/qianwen/" target="_blank">通义千问</a>
+                    <p>Alibaba's AI model for various queries.</p>
                 </div>
-                <div class="website">
-                    <img src="https://www.doubao.com/favicon.ico" alt="豆包" onerror="this.onerror=null;this.src='https://logo.clearbit.com/doubao.com';this.onerror='this.onerror=null;this.src=https://www.google.com/s2/favicons?domain=doubao.com';this.onerror='this.onerror=null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror=null;this.src=https://favi.deno.dev/logo/doubao.com';">
-                    <a href="https://www.doubao.com/">豆包</a>
+                <div class="website" onclick="openInNewTab('https://www.doubao.com/')">
+                    <img src="https://www.doubao.com/favicon.ico" alt="豆包" onerror="this.onerror=null;this.src='https://logo.clearbit.com/doubao.com';this.onerror='this.onerror.null;this.src=https://www.google.com/s2/favicons?domain=doubao.com';this.onerror='this.onerror.null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror.null;this.src=https://favi.deno.dev/logo/doubao.com';">
+                    <a href="https://www.doubao.com/" target="_blank">豆包</a>
+                    <p>AI-driven content generation platform.</p>
                 </div>
             </div>
             <div class="category">
                 <h2>Images</h2>
-                <div class="website">
-                    <img src="https://www.midjourney.com/favicon.ico" alt="MidJourney" onerror="this.onerror=null;this.src='https://logo.clearbit.com/midjourney.com';this.onerror='this.onerror=null;this.src=https://www.google.com/s2/favicons?domain=midjourney.com';this.onerror='this.onerror=null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror=null;this.src=https://favi.deno.dev/logo/midjourney.com';">
-                    <a href="https://www.midjourney.com/">MidJourney</a>
+                <div class="website" onclick="openInNewTab('https://www.midjourney.com/')">
+                    <img src="https://www.midjourney.com/favicon.ico" alt="MidJourney" onerror="this.onerror=null;this.src='https://logo.clearbit.com/midjourney.com';this.onerror='this.onerror.null;this.src=https://www.google.com/s2/favicons?domain=midjourney.com';this.onerror='this.onerror.null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror.null;this.src=https://favi.deno.dev/logo/midjourney.com';">
+                    <a href="https://www.midjourney.com/" target="_blank">MidJourney</a>
+                    <p>AI-powered image generation tool.</p>
                 </div>
-                <div class="website">
-                    <img src="https://aigc.360.com/favicon.ico" alt="360智绘" onerror="this.onerror=null;this.src='https://logo.clearbit.com/aigc.360.com';this.onerror='this.onerror=null;this.src=https://www.google.com/s2/favicons?domain=aigc.360.com';this.onerror='this.onerror=null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror=null;this.src=https://favi.deno.dev/logo/aigc.360.com';">
-                    <a href="https://aigc.360.com">360智绘</a>
+                <div class="website" onclick="openInNewTab('https://aigc.360.com')">
+                    <img src="https://aigc.360.com/favicon.ico" alt="360智绘" onerror="this.onerror.null;this.src='https://logo.clearbit.com/aigc.360.com';this.onerror='this.onerror.null;this.src=https://www.google.com/s2/favicons?domain=aigc.360.com';this.onerror='this.onerror.null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror.null;this.src=https://favi.deno.dev/logo/aigc.360.com';">
+                    <a href="https://aigc.360.com" target="_blank">360智绘</a>
+                    <p>AI-driven creative image platform.</p>
                 </div>
             </div>
             <div class="category">
                 <h2>Videos</h2>
-                <div class="website">
-                    <img src="https://app.pixverse.ai/favicon.ico" alt="Pix Verse" onerror="this.onerror=null;this.src='https://logo.clearbit.com/pixverse.ai';this.onerror='this.onerror=null;this.src=https://www.google.com/s2/favicons?domain=pixverse.ai';this.onerror='this.onerror=null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror=null;this.src=https://favi.deno.dev/logo/pixverse.ai';">
-                    <a href="https://app.pixverse.ai/home">Pix Verse</a>
+                <div class="website" onclick="openInNewTab('https://app.pixverse.ai/home')">
+                    <img src="https://app.pixverse.ai/favicon.ico" alt="Pix Verse" onerror="this.onerror=null;this.src='https://logo.clearbit.com/pixverse.ai';this.onerror='this.onerror.null;this.src=https://www.google.com/s2/favicons?domain=pixverse.ai';this.onerror='this.onerror.null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror.null;this.src=https://favi.deno.dev/logo/pixverse.ai';">
+                    <a href="https://app.pixverse.ai/home" target="_blank">Pix Verse</a>
+                    <p>AI platform for video creation.</p>
                 </div>
-                <div class="website">
-                    <img src="https://pika.art/favicon.ico" alt="Pika" onerror="this.onerror=null;this.src='https://logo.clearbit.com/pika.art';this.onerror='this.onerror=null;this.src=https://www.google.com/s2/favicons?domain=pika.art';this.onerror='this.onerror=null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror=null;this.src=https://favi.deno.dev/logo/pika.art';">
-                    <a href="https://pika.art/">Pika</a>
+                <div class="website" onclick="openInNewTab('https://pika.art/')">
+                    <img src="https://pika.art/favicon.ico" alt="Pika" onerror="this.onerror=null;this.src='https://logo.clearbit.com/pika.art';this.onerror='this.onerror.null;this.src=https://www.google.com/s2/favicons?domain=pika.art';this.onerror='this.onerror.null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror.null;this.src=https://favi.deno.dev/logo/pika.art';">
+                    <a href="https://pika.art/" target="_blank">Pika</a>
+                    <p>AI tool for artistic video creation.</p>
                 </div>
-                <div class="website">
-                    <img src="https://lumalabs.ai/favicon.ico" alt="Luma" onerror="this.onerror=null;this.src='https://logo.clearbit.com/lumalabs.ai';this.onerror='this.onerror=null;this.src=https://www.google.com/s2/favicons?domain=lumalabs.ai';this.onerror='this.onerror=null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror=null;this.src=https://favi.deno.dev/logo/lumalabs.ai';">
-                    <a href="https://lumalabs.ai/">Luma</a>
+                <div class="website" onclick="openInNewTab('https://lumalabs.ai/')">
+                    <img src="https://lumalabs.ai/favicon.ico" alt="Luma" onerror="this.onerror=null;this.src='https://logo.clearbit.com/lumalabs.ai';this.onerror='this.onerror.null;this.src=https://www.google.com/s2/favicons?domain=lumalabs.ai';this.onerror='this.onerror.null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror.null;this.src=https://favi.deno.dev/logo/lumalabs.ai';">
+                    <a href="https://lumalabs.ai/" target="_blank">Luma</a>
+                    <p>AI-enhanced video creation and editing.</p>
                 </div>
-                <div class="website">
-                    <img src="https://app.heygen.com/favicon.ico" alt="HeyGen" onerror="this.onerror=null;this.src='https://logo.clearbit.com/heygen.com';this.onerror='this.onerror=null;this.src=https://www.google.com/s2/favicons?domain=heygen.com';this.onerror='this.onerror=null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror=null;this.src=https://favi.deno.dev/logo/heygen.com';">
-                    <a href="https://app.heygen.com/">HeyGen</a>
+                <div class="website" onclick="openInNewTab('https://app.heygen.com/')">
+                    <img src="https://app.heygen.com/favicon.ico" alt="HeyGen" onerror="this.onerror=null;this.src='https://logo.clearbit.com/heygen.com';this.onerror='this.onerror.null;this.src=https://www.google.com/s2/favicons?domain=heygen.com';this.onerror='this.onerror.null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror.null;this.src=https://favi.deno.dev/logo/heygen.com';">
+                    <a href="https://app.heygen.com/" target="_blank">HeyGen</a>
+                    <p>AI-generated video content platform.</p>
                 </div>
             </div>
             <div class="category">
                 <h2>Music</h2>
-                <div class="website">
-                    <img src="https://suno.com/favicon.ico" alt="Suno" onerror="this.onerror=null;this.src='https://logo.clearbit.com/suno.com';this.onerror='this.onerror=null;this.src=https://www.google.com/s2/favicons?domain=suno.com';this.onerror='this.onerror=null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror=null;this.src=https://favi.deno.dev/logo/suno.com';">
-                    <a href="https://suno.com">Suno</a>
+                <div class="website" onclick="openInNewTab('https://suno.com')">
+                    <img src="https://suno.com/favicon.ico" alt="Suno" onerror="this.onerror=null;this.src='https://logo.clearbit.com/suno.com';this.onerror='this.onerror.null;this.src=https://www.google.com/s2/favicons?domain=suno.com';this.onerror='this.onerror.null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror.null;this.src=https://favi.deno.dev/logo/suno.com';">
+                    <a href="https://suno.com" target="_blank">Suno</a>
+                    <p>AI-driven music creation platform.</p>
                 </div>
             </div>
             <div class="category">
                 <h2>Other</h2>
-                <div class="website">
-                    <img src="https://mathgptpro.com/favicon.ico" alt="MathGPT" onerror="this.onerror=null;this.src='https://logo.clearbit.com/mathgptpro.com';this.onerror='this.onerror=null;this.src=https://www.google.com/s2/favicons?domain=mathgptpro.com';this.onerror='this.onerror=null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror=null;this.src=https://favi.deno.dev/logo/mathgptpro.com';">
-                    <a href="https://mathgptpro.com">MathGPT</a>
+                <div class="website" onclick="openInNewTab('https://mathgptpro.com')">
+                    <img src="https://mathgptpro.com/favicon.ico" alt="MathGPT" onerror="this.onerror=null;this.src='https://logo.clearbit.com/mathgptpro.com';this.onerror='this.onerror.null;this.src=https://www.google.com/s2/favicons?domain=mathgptpro.com';this.onerror='this.onerror.null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror.null;this.src=https://favi.deno.dev/logo/mathgptpro.com';">
+                    <a href="https://mathgptpro.com" target="_blank">MathGPT</a>
+                    <p>AI tool for mathematical problem solving.</p>
                 </div>
-                <div class="website">
-                    <img src="https://www.deepl.com/favicon.ico" alt="DeepL" onerror="this.onerror=null;this.src='https://logo.clearbit.com/deepl.com';this.onerror='this.onerror=null;this.src=https://www.google.com/s2/favicons?domain=deepl.com';this.onerror='this.onerror=null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror=null;this.src=https://favi.deno.dev/logo/deepl.com';">
-                    <a href="https://www.deepl.com/zh/translator">DeepL</a>
+                <div class="website" onclick="openInNewTab('https://www.deepl.com/zh/translator')">
+                    <img src="https://www.deepl.com/favicon.ico" alt="DeepL" onerror="this.onerror=null;this.src='https://logo.clearbit.com/deepl.com';this.onerror='this.onerror.null;this.src=https://www.google.com/s2/favicons?domain=deepl.com';this.onerror='this.onerror.null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror.null;this.src=https://favi.deno.dev/logo/deepl.com';">
+                    <a href="https://www.deepl.com/zh/translator" target="_blank">DeepL</a>
+                    <p>AI-powered translation service.</p>
                 </div>
             </div>
             <div class="category">
                 <h2>Resources</h2>
-                <div class="website">
-                    <img src="https://gpt.changjing.com.cn/favicon.ico" alt="GPT提示词大全" onerror="this.onerror=null;this.src='https://logo.clearbit.com/changjing.com.cn';this.onerror='this.onerror=null;this.src=https://www.google.com/s2/favicons?domain=changjing.com.cn';this.onerror='this.onerror=null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror=null;this.src=https://favi.deno.dev/logo/changjing.com.cn';">
-                    <a href="https://gpt.changjing.com.cn/chatgpt-prompt">GPT提示词大全</a>
+                <div class="website" onclick="openInNewTab('https://gpt.changjing.com.cn/chatgpt-prompt')">
+                    <img src="https://gpt.changjing.com.cn/favicon.ico" alt="GPT提示词大全" onerror="this.onerror=null;this.src='https://logo.clearbit.com/changjing.com.cn';this.onerror='this.onerror.null;this.src=https://www.google.com/s2/favicons?domain=changjing.com.cn';this.onerror='this.onerror.null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror.null;this.src=https://favi.deno.dev/logo/changjing.com.cn';">
+                    <a href="https://gpt.changjing.com.cn/chatgpt-prompt" target="_blank">GPT提示词大全</a>
+                    <p>Comprehensive collection of GPT prompts.</p>
                 </div>
-                <div class="website">
-                    <img src="https://srefhunter.top/favicon.ico" alt="Free Midjourney Sref Codes" onerror="this.onerror=null;this.src='https://logo.clearbit.com/srefhunter.top';this.onerror='this.onerror=null;this.src=https://www.google.com/s2/favicons?domain=srefhunter.top';this.onerror='this.onerror=null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror=null;this.src=https://favi.deno.dev/logo/srefhunter.top';">
-                    <a href="https://srefhunter.top">Free Midjourney Sref Codes</a>
+                <div class="website" onclick="openInNewTab('https://srefhunter.top')">
+                    <img src="https://srefhunter.top/favicon.ico" alt="Free Midjourney Sref Codes" onerror="this.onerror=null;this.src='https://logo.clearbit.com/srefhunter.top';this.onerror='this.onerror.null;this.src=https://www.google.com/s2/favicons?domain=srefhunter.top';this.onerror='this.onerror.null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror.null;this.src=https://favi.deno.dev/logo/srefhunter.top';">
+                    <a href="https://srefhunter.top" target="_blank">Free Midjourney Sref Codes</a>
+                    <p>Free reference codes for Midjourney.</p>
                 </div>
-                <div class="website">
-                    <img src="https://z3ukhtd18c.feishu.cn/favicon.ico" alt="Ai学习资料" onerror="this.onerror=null;this.src='https://logo.clearbit.com/feishu.cn';this.onerror='this.onerror=null;this.src=https://www.google.com/s2/favicons?domain=feishu.cn';this.onerror='this.onerror=null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror=null;this.src=https://favi.deno.dev/logo/feishu.cn';">
-                    <a href="https://z3ukhtd18c.feishu.cn/wiki/VST2w9z9riAezbkTnXEcwsstnZd">Ai学习资料</a>
+                <div class="website" onclick="openInNewTab('https://z3ukhtd18c.feishu.cn/wiki/VST2w9z9riAezbkTnXEcwsstnZd')">
+                    <img src="https://z3ukhtd18c.feishu.cn/favicon.ico" alt="Ai学习资料" onerror="this.onerror=null;this.src='https://logo.clearbit.com/feishu.cn';this.onerror='this.onerror.null;this.src=https://www.google.com/s2/favicons?domain=feishu.cn';this.onerror='this.onerror.null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror.null;this.src=https://favi.deno.dev/logo/feishu.cn';">
+                    <a href="https://z3ukhtd18c.feishu.cn/wiki/VST2w9z9riAezbkTnXEcwsstnZd" target="_blank">Ai学习资料</a>
+                    <p>Resources for learning AI.</p>
                 </div>
-                <div class="website">
-                    <img src="https://aishenqi.feishu.cn/favicon.ico" alt="Ai工具链接" onerror="this.onerror=null;this.src='https://logo.clearbit.com/feishu.cn';this.onerror='this.onerror=null;this.src=https://www.google.com/s2/favicons?domain=feishu.cn';this.onerror='this.onerror=null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror=null;this.src=https://favi.deno.dev/logo/feishu.cn';">
-                    <a href="https://aishenqi.feishu.cn/docx/HMm1dZGZUoJZ3qxpGZnc43X1npg">Ai工具链接</a>
+                <div class="website" onclick="openInNewTab('https://aishenqi.feishu.cn/docx/HMm1dZGZUoJZ3qxpGZnc43X1npg')">
+                    <img src="https://aishenqi.feishu.cn/favicon.ico" alt="Ai工具链接" onerror="this.onerror=null;this.src='https://logo.clearbit.com/feishu.cn';this.onerror='this.onerror.null;this.src=https://www.google.com/s2/favicons?domain=feishu.cn';this.onerror='this.onerror.null;this.src=https://www.bing.com/sa/simg/favicon-2x.ico';this.onerror='this.onerror.null;this.src=https://favi.deno.dev/logo/feishu.cn';">
+                    <a href="https://aishenqi.feishu.cn/docx/HMm1dZGZUoJZ3qxpGZnc43X1npg" target="_blank">Ai工具链接</a>
+                    <p>Links to various AI tools.</p>
                 </div>
             </div>
         </div>
     </div>
 </body>
 </html>
-
